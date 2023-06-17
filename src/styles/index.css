@@ -2,6 +2,146 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  margin: 0;
+* {
+  font-family: Ubuntu, sans-serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e234d;
+  /* background-color: #000; */
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+html::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+    background-color: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 20px;
+}
+
+.space {
+	position: absolute;
+	width: 400vw;
+	height: 400vh;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	margin-top: -200vh;
+	margin-left: -200vw;
+	animation: spin 240s linear infinite;
+	background-size: 240px;
+	backface-visibility: visible;
+	background-image: url(https://res.cloudinary.com/dhanciveg/image/upload/v1686975650/rick-and-morty/stars_obqgkm.svg);
+}
+
+/* HEADER */
+.link-header a {
+  -webkit-text-fill-color: #00b5cd; /* Relleno de texto transparente */
+  -webkit-text-stroke-width: .5px; /* Ancho del borde */
+  -webkit-text-stroke-color: #9bc729; /* Color del borde */
+
+  font-size: 20px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-header a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #9bc729;
+  transition: width .5s;
+}
+
+.link-header a:hover::after {
+  width: 100%;
+  transition: width .5s;
+}
+/* HEADER */
+
+/* HOME */
+.titleHome{
+    -webkit-text-fill-color: #00b5cd;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9bc729;
+}
+.parrafoHome{
+	font-size: 20px;
+    -webkit-text-fill-color: #00b5cd;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #9bc729;
+}
+/* HOME */
+
+/* CATALOGO */
+  .titleCatalogo{
+    -webkit-text-fill-color: #00b5cd;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #9bc729;
+  }
+/* CATALOGO */
+
+/* ERROR PAGE */
+.wrapper {
+  top: 50%;
+  transform: translateY(-50%);
+  width: fit-content;
+  z-index: 4;
+}
+.wrapper span {
+  font-size: 20.4em;
+  width: fit-content;
+  height: max-content;
+}
+ .wrapper span:first-letter {
+	 letter-spacing: 12vmax;
+}
+ .wrapper span:before {
+	 content: '';
+	 background-image: url('https://res.cloudinary.com/dhanciveg/image/upload/v1686977123/rick-and-morty/logoPrincipal_phovms.png');
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 background-repeat: no-repeat;
+	 background-size: contain;
+	 background-position: center;
+	 animation: rotateIn 0.5s ease-out;
+} 
+@keyframes spin {
+	 from {
+		 transform: rotate(0deg);
+	}
+	 to {
+		 transform: rotate(-360deg);
+	}
+}
+ @keyframes rotateIn {
+	 from {
+		 transform: rotate(0deg) scale(0.2);
+		 opacity: 0;
+	}
+	 to {
+		 transform: rotate(360deg) scale(1);
+		 opacity: 1;
+	}
+}
+ /* ERROR PAGE */
+
+
+ @media (min-width: 1600px) {
+	.link-header a{
+		font-size: 24px;
+	}
+  }
