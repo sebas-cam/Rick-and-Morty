@@ -5,7 +5,6 @@
 * {
   font-family: Ubuntu, sans-serif;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   /* background-color: #000; */
   height: 100%;
 }
-
 html {
   height: 100%;
   overflow: hidden;
@@ -23,12 +21,10 @@ html::-webkit-scrollbar {
     height: 8px;    
     background-color: #ffffff;
 }
-
 html::-webkit-scrollbar-thumb {
     background: #000000;
     border-radius: 20px;
 }
-
 .space {
 	position: absolute;
 	width: 400vw;
@@ -55,7 +51,6 @@ html::-webkit-scrollbar-thumb {
   color: #000;
   text-decoration: none;
 }
-
 .link-header a::after {
   content: '';
   display: block;
@@ -64,7 +59,6 @@ html::-webkit-scrollbar-thumb {
   background: #9bc729;
   transition: width .5s;
 }
-
 .link-header a:hover::after {
   width: 100%;
   transition: width .5s;
@@ -160,9 +154,8 @@ html::-webkit-scrollbar-thumb {
 }
  /* ERROR PAGE */
 
-
- @media (min-width: 1600px) {
+@media (min-width: 1600px) {
 	.link-header a{
 		font-size: 24px;
 	}
-  }
+}
