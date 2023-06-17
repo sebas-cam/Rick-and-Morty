@@ -86,11 +86,32 @@ html::-webkit-scrollbar-thumb {
 /* HOME */
 
 /* CATALOGO */
-  .titleCatalogo{
+.titleCatalogo{
     -webkit-text-fill-color: #00b5cd;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #9bc729;
+}
+.cta button{
+  outline: none;
+  background: transparent;
+  border: 1px solid;
+  transition: .5s;
+}
+.cta button:hover{
+  background-color: #30a812;
+  color: white;
+}
+.rotateImg{
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* CATALOGO */
 
 /* ERROR PAGE */
