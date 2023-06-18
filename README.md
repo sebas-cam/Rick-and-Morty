@@ -1,28 +1,24 @@
 # Rick-and-Morty
 
-## **📌 OBJETIVOS**
+## **📌 OBJECTIVES**
 
-- create a new web portfolio with a better UI
+- create a Web App where you can search for any character from Rick and Morty
 
-## **📌 DESCRIPCIÓN DEL PROYECTO**
- 
-- In this web you can:
+## **📌 PROJECT DESCRIPTION**
 
-✅ Reed more information about me.
+✅ Display detailed information about characters.
 <br />
-✅ See my skills.
+✅ Character search and filtering. 
 <br />
-✅ See my projects.
+✅ Viewing episodes.
 <br />
-✅ Find my CV.
-<br />
-✅ Contact me.
+✅ Attractive and user-friendly design.
 <br />
 
-## **🦾 TECNOLOGÍAS**
+## **🦾 TECHNOLOGIES**
 
--  **HTML**, **CSS**, **Tailwind**, **JavaScript**, **React**, **Astro**
+-  **HTML**, **CSS**, **Tailwind**, **JavaScript**, **React**, **Vite**
 
 ## **LINK**
 
-- <a href="https://sebastian-campos.com/" target="_blank">sebastian-campos.com</a>
+- <a href="https://sebastian-campos.rick-and-morty.com/" target="_blank">Rick and Morty</a>
