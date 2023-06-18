@@ -80,6 +80,28 @@ html::-webkit-scrollbar-thumb {
 /* HOME */
 
 /* CATALOGO */
+.imgCharacter{
+  box-shadow: 0px 0px 40px -6px rgba(0,0,0,0.75);
+  padding: 0;
+  width: 70%;
+  margin: 10px auto;
+}
+.greenBall, .redBall, .orangeBall{
+  height: 10px;
+  width: 10px;  
+  display: inline-block;
+  margin: auto;
+  border-radius: 100%;
+}
+.greenBall{
+  background: green;
+}
+.redBall{
+  background: red;
+}
+.orangeBall{
+  background: orange;
+}
 .titleCatalogo{
     -webkit-text-fill-color: #00b5cd;
     -webkit-text-stroke-width: 0.5px;

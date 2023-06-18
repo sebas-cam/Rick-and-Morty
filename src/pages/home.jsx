@@ -1,5 +1,19 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 function Home() {
     
+    const navigate = useNavigate();
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+        console.log(searchTerm)             
+        navigate(`/catalogo/s/${searchTerm}`);        
+        setSearchTerm('')   
+      }
+    };
+
     return(
         <>
         <div className="space"></div>
@@ -9,7 +23,13 @@ function Home() {
                 <h1 className="md:text-7xl 2xl:text-8xl pb-8 titleHome">Rick & Morty</h1>
                 <p className="pl-2 pb-4 md:text-xl 2xl:text-2xl parrafoHome">Find your favorites rick and morty characters</p>
                 <label htmlFor="">
-                    <input className="py-2 2xl:p-3.5 px-3.5 w-full rounded-lg outline-0 bg-[#9bc7294a] border-[#9bc729]" type="text" value="" placeholder="Search" />
+                    <input className="text-[#00b5cd] py-2 2xl:p-3.5 px-3.5 w-full rounded-lg outline-0 bg-[#9bc7294a] border-[#9bc729]" 
+                        type="text" 
+                        value={searchTerm}
+                        onChange={(event) => setSearchTerm(event.target.value)}
+                        onKeyDown={handleKeyDown}
+                        placeholder="Search"
+                    />
                 </label>                
             </div> 
             <div className="absolute right-0 bottom-0">
@@ -19,5 +39,6 @@ function Home() {
         </>                
     )
 }
+
 
 export default Home;
