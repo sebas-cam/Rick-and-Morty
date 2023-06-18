@@ -21,4 +21,4 @@
 
 ## **LINK**
 
-- <a href="rick-and-morty.sebastian-campos.com" target="_blank">Rick and Morty</a>
+- <a href="https://rick-and-morty.sebastian-campos.com/" target="_blank">Rick and Morty</a>
